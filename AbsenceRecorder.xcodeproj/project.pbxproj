@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		76EA98422B84B8D400F099EB /* AbsenceRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98412B84B8D400F099EB /* AbsenceRecorderApp.swift */; };
-		76EA98442B84B8D400F099EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98432B84B8D400F099EB /* ContentView.swift */; };
 		76EA98462B84B8D500F099EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EA98452B84B8D500F099EB /* Assets.xcassets */; };
 		76EA98492B84B8D500F099EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EA98482B84B8D500F099EB /* Preview Assets.xcassets */; };
+		76EA98512B84BA7200F099EB /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98502B84BA7200F099EB /* Date.swift */; };
+		76EA98542B84BB7800F099EB /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98532B84BB7800F099EB /* Division.swift */; };
+		76EA98562B84BC9300F099EB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98552B84BC9300F099EB /* Student.swift */; };
+		76EA985B2B84BD4800F099EB /* DivisionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA985A2B84BD4800F099EB /* DivisionsView.swift */; };
+		76EA985F2B84BE2900F099EB /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA985E2B84BE2900F099EB /* RootTabView.swift */; };
+		76EA98612B84BE8D00F099EB /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98602B84BE8D00F099EB /* StatisticsView.swift */; };
+		76EA98632B84BF0B00F099EB /* AbsenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98622B84BF0B00F099EB /* AbsenceView.swift */; };
+		76EA98652B84BF6900F099EB /* DivisionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98642B84BF6900F099EB /* DivisionItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		76EA983E2B84B8D400F099EB /* AbsenceRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbsenceRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EA98412B84B8D400F099EB /* AbsenceRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceRecorderApp.swift; sourceTree = "<group>"; };
-		76EA98432B84B8D400F099EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76EA98452B84B8D500F099EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76EA98482B84B8D500F099EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		76EA98502B84BA7200F099EB /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		76EA98532B84BB7800F099EB /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
+		76EA98552B84BC9300F099EB /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		76EA985A2B84BD4800F099EB /* DivisionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionsView.swift; sourceTree = "<group>"; };
+		76EA985E2B84BE2900F099EB /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		76EA98602B84BE8D00F099EB /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		76EA98622B84BF0B00F099EB /* AbsenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceView.swift; sourceTree = "<group>"; };
+		76EA98642B84BF6900F099EB /* DivisionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		76EA98402B84B8D400F099EB /* AbsenceRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				76EA98572B84BCF200F099EB /* View */,
+				76EA98522B84BB0700F099EB /* Model */,
+				76EA984F2B84BA5500F099EB /* Extensions */,
 				76EA98412B84B8D400F099EB /* AbsenceRecorderApp.swift */,
-				76EA98432B84B8D400F099EB /* ContentView.swift */,
 				76EA98452B84B8D500F099EB /* Assets.xcassets */,
 				76EA98472B84B8D500F099EB /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				76EA98482B84B8D500F099EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76EA984F2B84BA5500F099EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76EA98502B84BA7200F099EB /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		76EA98522B84BB0700F099EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76EA98532B84BB7800F099EB /* Division.swift */,
+				76EA98552B84BC9300F099EB /* Student.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76EA98572B84BCF200F099EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76EA985A2B84BD4800F099EB /* DivisionsView.swift */,
+				76EA985E2B84BE2900F099EB /* RootTabView.swift */,
+				76EA98602B84BE8D00F099EB /* StatisticsView.swift */,
+				76EA98622B84BF0B00F099EB /* AbsenceView.swift */,
+				76EA98642B84BF6900F099EB /* DivisionItem.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76EA98442B84B8D400F099EB /* ContentView.swift in Sources */,
+				76EA98632B84BF0B00F099EB /* AbsenceView.swift in Sources */,
+				76EA98512B84BA7200F099EB /* Date.swift in Sources */,
+				76EA98542B84BB7800F099EB /* Division.swift in Sources */,
+				76EA985B2B84BD4800F099EB /* DivisionsView.swift in Sources */,
+				76EA98612B84BE8D00F099EB /* StatisticsView.swift in Sources */,
+				76EA98562B84BC9300F099EB /* Student.swift in Sources */,
+				76EA985F2B84BE2900F099EB /* RootTabView.swift in Sources */,
 				76EA98422B84B8D400F099EB /* AbsenceRecorderApp.swift in Sources */,
+				76EA98652B84BF6900F099EB /* DivisionItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
