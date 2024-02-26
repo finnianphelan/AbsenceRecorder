@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		767E31912B8D26C800B4C935 /* AbsenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767E31902B8D26C800B4C935 /* AbsenceItem.swift */; };
+		767E31932B8D273D00B4C935 /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767E31922B8D273D00B4C935 /* Absence.swift */; };
+		767E31952B8D276500B4C935 /* StudentAbsence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767E31942B8D276500B4C935 /* StudentAbsence.swift */; };
 		76EA98422B84B8D400F099EB /* AbsenceRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA98412B84B8D400F099EB /* AbsenceRecorderApp.swift */; };
 		76EA98462B84B8D500F099EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EA98452B84B8D500F099EB /* Assets.xcassets */; };
 		76EA98492B84B8D500F099EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EA98482B84B8D500F099EB /* Preview Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		767E31902B8D26C800B4C935 /* AbsenceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceItem.swift; sourceTree = "<group>"; };
+		767E31922B8D273D00B4C935 /* Absence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Absence.swift; sourceTree = "<group>"; };
+		767E31942B8D276500B4C935 /* StudentAbsence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAbsence.swift; sourceTree = "<group>"; };
 		76EA983E2B84B8D400F099EB /* AbsenceRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbsenceRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EA98412B84B8D400F099EB /* AbsenceRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceRecorderApp.swift; sourceTree = "<group>"; };
 		76EA98452B84B8D500F099EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 			children = (
 				76EA98532B84BB7800F099EB /* Division.swift */,
 				76EA98552B84BC9300F099EB /* Student.swift */,
+				767E31922B8D273D00B4C935 /* Absence.swift */,
+				767E31942B8D276500B4C935 /* StudentAbsence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +116,7 @@
 				76EA98602B84BE8D00F099EB /* StatisticsView.swift */,
 				76EA98622B84BF0B00F099EB /* AbsenceView.swift */,
 				76EA98642B84BF6900F099EB /* DivisionItem.swift */,
+				767E31902B8D26C800B4C935 /* AbsenceItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,12 +194,15 @@
 				76EA98632B84BF0B00F099EB /* AbsenceView.swift in Sources */,
 				76EA98512B84BA7200F099EB /* Date.swift in Sources */,
 				76EA98542B84BB7800F099EB /* Division.swift in Sources */,
+				767E31952B8D276500B4C935 /* StudentAbsence.swift in Sources */,
 				76EA985B2B84BD4800F099EB /* DivisionsView.swift in Sources */,
 				76EA98612B84BE8D00F099EB /* StatisticsView.swift in Sources */,
 				76EA98562B84BC9300F099EB /* Student.swift in Sources */,
+				767E31912B8D26C800B4C935 /* AbsenceItem.swift in Sources */,
 				76EA985F2B84BE2900F099EB /* RootTabView.swift in Sources */,
 				76EA98422B84B8D400F099EB /* AbsenceRecorderApp.swift in Sources */,
 				76EA98652B84BF6900F099EB /* DivisionItem.swift in Sources */,
+				767E31932B8D273D00B4C935 /* Absence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
