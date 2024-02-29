@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct DivisionsView: View {
-	
-	var divisions: [Division]
+	@EnvironmentObject var state: StateController
 	@State private var currentDate: Date = Date()
 	
 	var body: some View {
 		NavigationView {
-			List(divisions, id: \.self.code) { division in
+			List(state.divisions, id: \.self.code) { division in
 				NavigationLink(destination: AbsenceView(absence: division.createAbsenceOrGetExistingIfAvailable(for: currentDate))) {
 					DivisionItem(division: division)
 				}
+				
 			}
+			.onAppear(perform: { state.saveToFile() } )
 			.navigationTitle(currentDate.getShortDate())
 			.toolbar {
 				ToolbarItem(placement: .navigationBarLeading) {
@@ -31,13 +32,16 @@ struct DivisionsView: View {
 						Image(systemName: "arrow.forward")
 					}
 				}
+				
 			}
 		}
 	}
+	
 }
 
-struct DivisionsView_Previews: PreviewProvider {
-    static var previews: some View {
-		DivisionsView(divisions: Division.examples)
-    }
+struct ContentView_Previews: PreviewProvider {
+	static var previews: some View {
+		DivisionsView()
+			.environmentObject(StateController())
+	}
 }
